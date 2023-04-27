@@ -1,0 +1,14 @@
+.authentification-container textarea {
+    width: 400px;
+    height: 70px;
+    margin: 10px 0;
+}
+
+.form-msg-privacy {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.ca-btn {
+    margin-bottom: 30px;
+}
