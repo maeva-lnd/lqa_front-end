@@ -1,0 +1,46 @@
+.slider-card {
+    min-height: 280px;
+    background-image: url("../../Assets/RestaurantMenu/slider_card.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-card p {
+    padding-bottom: 40px;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    width: 350px;
+    border-bottom: 1px solid  #CCC5B9;
+    margin: 0 25px;
+    padding: 20px 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.card-item2 {
+    width: 500px;
+    border-bottom: 1px solid  #CCC5B9;
+    margin: 0 25px;
+    padding: 20px 0;
+}
+
+
+.card-restaurant .separator {
+    background-color: #C44900;
+    height: 2px;
+    width: 300px;
+    margin: 0 auto 40px auto;
+}
+
+.category {
+    padding: 40px 0 20px 0;
+}
