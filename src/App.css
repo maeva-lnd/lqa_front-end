@@ -83,3 +83,27 @@ p, a, button {
 .p40 {
     padding: 40px 0;
 }
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    color: #403D39;
+}
+
+input, textarea {
+    padding: 0 0 0 10px;
+    border: 1px solid #403D39;
+}
+
+textarea {
+    padding-top: 8px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #403D39;
+    font-weight: lighter;
+    font-size: 16px;
+}
+

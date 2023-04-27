@@ -16,7 +16,7 @@ const Navbar = () => {
                     Contact
                 </NavLink>
                 <NavLink to="/reservation" >Réserver</NavLink>
-                <NavLink to="/login" >Se connecter</NavLink>
+                <NavLink to="/connexion" >Se connecter</NavLink>
             </nav>
         </div>
     )
