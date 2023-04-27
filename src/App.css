@@ -47,3 +47,19 @@ p, a, button {
 .full {
     width: 100%;
 }
+
+.p20 {
+    padding: 20px 0;
+}
+
+.bg-beige {
+    background: #F7F2E9;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}

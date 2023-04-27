@@ -1,0 +1,15 @@
+#slider {
+    min-height: 500px;
+    background-image: url("../../../Assets/HomePictures/lqa_slider.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slider p {
+    padding: 40px 0;
+    font-size: 20px;
+}

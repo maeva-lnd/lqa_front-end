@@ -1,0 +1,25 @@
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    width: 550px;
+}
+
+.section {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.section .content {
+    width: 510px;
+}
+
+
+.section .content p {
+    padding: 30px 0;
+}
