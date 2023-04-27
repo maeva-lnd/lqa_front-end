@@ -1,0 +1,10 @@
+header img#light-logo {
+    width: 200px;
+    padding: 10px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

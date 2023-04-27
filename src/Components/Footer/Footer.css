@@ -1,0 +1,41 @@
+footer {
+    background: #CCC5B9;
+    padding: 10px 0;
+}
+
+footer img#dark-logo {
+    width: 200px;
+}
+
+footer #logo {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+footer h4 {
+    padding: 20px 0;
+}
+
+#footer-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sitemap a {
+    display: flex;
+    flex-direction: row;
+    padding : 0 0 3px 0;
+}
+
+.socials-links img {
+    width: 25px;
+    margin: 20px 10px;
+}
+
+footer #copyright p {
+    text-align:center;
+    font-size: 14px;
+    border-top: 1px solid #403D39;
+    padding-top: 10px;
+}

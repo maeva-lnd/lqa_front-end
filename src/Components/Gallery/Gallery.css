@@ -1,0 +1,41 @@
+.gallery img {
+    width: 400px;
+    padding: 70px 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery .content-img:hover img {
+    opacity: 0.2;
+}
+
+.gallery .content-img {
+    position: relative;
+}
+
+.gallery .content-img p {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    color: #403D39;
+    display: none;
+    text-align: center;
+}
+
+.gallery .content-img:hover {
+    cursor: pointer;
+}
+
+.gallery .content-img:hover p {
+    display: block;
+    font-size: 22px;
+}
+
+.gallery .btn {
+    text-align: center;
+}
