@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "./Slider/Slider";
 import Section from "./Sections/Section";
-import picture from "../../Assets/HomePictures/lqa-restaurant.jpg";
-import picture2 from "../../Assets/HomePictures/cuisine-section.jpg";
-import picture3 from "../../Assets/HomePictures/privatisation-section.jpg";
+import picture from "../../Assets/Home/lqa-restaurant.jpg";
+import picture2 from "../../Assets/Home/cuisine-section.jpg";
+import picture3 from "../../Assets/Home/privatisation-section.jpg";
 import Gallery from "../../Components/Gallery/Gallery";
 import Button from "../../Components/Button/Button";
 

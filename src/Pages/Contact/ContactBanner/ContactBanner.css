@@ -1,0 +1,11 @@
+.infos-banner img {
+    width: 60px;
+    padding: 20px 0;
+}
+
+.infos-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
