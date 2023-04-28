@@ -8,7 +8,7 @@ const Button = (props) => {
         return (
             <div>
                 <button
-                    className={`btn ${props.color ? props.color : ''} ${props.border ? props.border : ''}`}
+                    className={`btn ${props.classname ? props.classname : ''} ${props.color ? props.color : ''} ${props.border ? props.border : ''}`}
                 >{props.label}</button>
             </div>
         )
@@ -16,7 +16,7 @@ const Button = (props) => {
         return (
             <div>
                 <Link
-                    className={`btn ${props.color ? props.color : ''} ${props.border ? props.border : ''}`} to={props.src}
+                    className={`btn ${props.classname ? props.classname : ''} ${props.color ? props.color : ''} ${props.border ? props.border : ''}`} to={props.src}
                 >{props.label}</Link>
             </div>
         )

@@ -1,0 +1,31 @@
+.container-contact {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+label {
+    display: block;
+}
+
+.form-group input {
+    width: 400px;
+    height: 40px;
+}
+
+.form-group textarea {
+    height: 200px;
+    width: 850px;
+}
+
+.btn-form {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}

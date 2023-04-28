@@ -1,0 +1,10 @@
+.slider-contact {
+    min-height: 280px;
+    background-image: url("../../Assets/Contact/contact_slider.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-contact p {
+    padding-bottom: 40px;
+}
