@@ -1,18 +1,34 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import axios from "axios";
+import OpeningHoursRow from "./OpeningHoursRow";
+
 
 const OpeningHours = () => {
+
+    const [openingHours, setOpeningHours] = useState();
+
+    React.useEffect(() => {
+        const baseURL = "http://127.0.0.1:8000/api/openinghours"
+
+         axios.get(baseURL).then((response) => {
+             setOpeningHours(
+                 response.data.map((item)=>{
+                      return <OpeningHoursRow
+                          day={item.name}
+                          openingHours={item.openingHours}
+                      />
+                })
+             )
+        });
+
+    }, []);
+
+    console.log(openingHours)
+
     return (
         <div>
             <h4>Nos horaires d'ouverture</h4>
-            <p>
-                Lundi : fermé <br/>
-                Mardi : 12:00 - 14:00 / 19:00 - 22:00 <br/>
-                Mercredi : 12:00 - 14:00 / 19:00 - 22:00 <br/>
-                Jeudi : 12:00 - 14:00 / 19:00 - 22:00 <br/>
-                Vendredi : 12:00 - 14:00 / 19:00 - 22:30 <br/>
-                Samedi : 12:00 - 14:00 / 19:00 - 22:30 <br/>
-                Dimanche : 12:00 - 14:00
-            </p>
+            {openingHours}
         </div>
     )
 
