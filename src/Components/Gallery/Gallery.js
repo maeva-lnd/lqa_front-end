@@ -1,34 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import axios from "axios";
+import Picture from "./Picture";
 import './Gallery.css';
-import picture from '../../Assets/Gallery/filet_agneau.jpg';
-import picture2 from '../../Assets/Gallery/escalope_poulet.jpg';
-import picture3 from '../../Assets/Gallery/pave_saumon.jpg';
-import picture4 from '../../Assets/Gallery/burger_savoyard.jpg';
+
+
 
 const Gallery = () => {
+
+    const [gallery, setGallery] = useState();
+
+    useEffect(() => {
+        const baseURL = "http://127.0.0.1:8000/api/gallery"
+
+        axios.get(baseURL).then((response) => {
+            setGallery(
+                response.data.map((item)=>{
+                    return <Picture
+                        src={item.src}
+                        title={item.title}
+                    />
+                })
+            )
+        });
+
+    }, []);
+
+
     return (
         <div className="gallery">
 
-            <div className="content-img">
-                <img src={picture} alt='Agneau cuit en basse température'/>
-                <p>Filet d'agneau</p>
-            </div>
-
-            <div className="content-img">
-                <img src={picture2} alt='Escalope de poulet'/>
-                <p>Escalope de poulet</p>
-            </div>
-
-            <div className="content-img">
-                <img src={picture3} alt='Pavé de saumon'/>
-                <p>Pavé de saumon</p>
-            </div>
-
-            <div className="content-img">
-                <img src={picture4} alt='Burger savoyard'/>
-                <p>Burger savoyard</p>
-            </div>
-
+            {gallery}
 
         </div>
     )
