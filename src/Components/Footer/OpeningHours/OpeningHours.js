@@ -7,7 +7,7 @@ const OpeningHours = () => {
 
     const [openingHours, setOpeningHours] = useState();
 
-    React.useEffect(() => {
+    useEffect(() => {
         const baseURL = "http://127.0.0.1:8000/api/openinghours"
 
          axios.get(baseURL).then((response) => {
@@ -22,8 +22,6 @@ const OpeningHours = () => {
         });
 
     }, []);
-
-    console.log(openingHours)
 
     return (
         <div>
