@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import OpeningHoursRow from "./OpeningHoursRow";
+import { v4 as uuidv4 } from 'uuid';
 
 
 const OpeningHours = () => {
@@ -14,6 +15,7 @@ const OpeningHours = () => {
              setOpeningHours(
                  response.data.map((item)=>{
                       return <OpeningHoursRow
+                          key={uuidv4()}
                           day={item.name}
                           openingHours={item.openingHours}
                       />
