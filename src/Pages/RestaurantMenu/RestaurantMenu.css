@@ -26,14 +26,6 @@
     text-transform: uppercase;
 }
 
-.card-item2 {
-    width: 500px;
-    border-bottom: 1px solid  #CCC5B9;
-    margin: 0 25px;
-    padding: 20px 0;
-}
-
-
 .card-restaurant .separator {
     background-color: #C44900;
     height: 2px;
@@ -43,4 +35,23 @@
 
 .category {
     padding: 40px 0 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-category {
+    width: 350px;
+}
+
+.menu-category h3 {
+    border-bottom: 1px solid  #CCC5B9;
+    padding: 20px 0;
+}
+
+.menu-dish {
+    border-bottom: 1px solid  #CCC5B9;
+    padding: 20px 0;
 }
