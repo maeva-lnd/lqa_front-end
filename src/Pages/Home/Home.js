@@ -5,8 +5,7 @@ import picture from "../../Assets/Home/lqa-restaurant.jpg";
 import picture2 from "../../Assets/Home/cuisine-section.jpg";
 import picture3 from "../../Assets/Home/privatisation-section.jpg";
 import Gallery from "../../Components/Gallery/Gallery";
-import Button from "../../Components/Button/Button";
-
+import Reservation from "../../Components/Reservation/Reservation";
 
 
 const Home = () => {
@@ -44,10 +43,8 @@ const Home = () => {
 
             <Gallery />
 
-            <div className="txt-center pb50">
-                <Button
-                    label={"Réserver une table"}
-                />
+            <div id="reservation-element" className="txt-center pb50">
+                <Reservation label="Réserver une table" />
             </div>
 
             <Section

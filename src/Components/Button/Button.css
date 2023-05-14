@@ -7,3 +7,7 @@
     padding : 10px 30px;
     display: inline-block;
 }
+
+.btn:hover {
+    background: #8C3400;
+}

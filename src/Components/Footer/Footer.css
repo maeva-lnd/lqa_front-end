@@ -39,3 +39,11 @@ footer #copyright p {
     border-top: 1px solid #403D39;
     padding-top: 10px;
 }
+
+footer .btn-modal {
+    padding: 0;
+    background: none;
+    font-size: 16px;
+    color:  #403D39;
+    text-transform: none;
+}

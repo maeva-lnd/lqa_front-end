@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Reservation from "../../Reservation/Reservation";
 
 const SiteMap = () => {
     return (
@@ -9,7 +10,7 @@ const SiteMap = () => {
             <Link to="/lerestaurant">Le restaurant</Link>
             <Link to="/lacarte">La carte</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/reservation">Réserver</Link>
+            <Reservation label="Réserver"/>
             <Link to="#">Mentions Légales</Link>
             <Link to="#">Politique de confidentialité</Link>
         </div>

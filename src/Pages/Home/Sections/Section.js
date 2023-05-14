@@ -16,7 +16,6 @@ const Section = (props) => {
                         label={props.btnLabel}
                         src={props.btnSrc}
                         type={props.btnType}
-                        border={props.btnBorder}
                     />
                 </div>
             </div>
