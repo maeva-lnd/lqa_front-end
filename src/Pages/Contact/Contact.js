@@ -3,6 +3,7 @@ import './Contact.css';
 import Button from "../../Components/Button/Button";
 import ContactForm from "./ContactForm/ContactForm";
 import ContactBanner from "./ContactBanner/ContactBanner";
+import Reservation from "../../Components/Reservation/Reservation";
 
 const Contact = () => {
     return (
@@ -10,9 +11,9 @@ const Contact = () => {
             <div className="slider-contact txt-center">
                 <h1 className="p40">Nous contacter</h1>
                 <p>L'équipe du Quai Antique vous accueille dans son ambiance conviviale.</p>
-                <Button
-                    label={"Réserver une table"}
-                />
+                <div id="reservation-element">
+                    <Reservation label="Réserver une table" />
+                </div>
             </div>
             <h2 className="txt-center p40">Demandes Spéciales</h2>
             <p className="txt-center">

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Picture from "./Picture";
 import './Gallery.css';
-
+import { v4 as uuidv4 } from 'uuid';
 
 
 const Gallery = () => {
@@ -16,6 +16,7 @@ const Gallery = () => {
             setGallery(
                 response.data.map((item)=>{
                     return <Picture
+                        key={uuidv4()}
                         src={item.src}
                         title={item.title}
                     />

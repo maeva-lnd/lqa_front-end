@@ -107,3 +107,11 @@ input::placeholder, textarea::placeholder {
     font-size: 16px;
 }
 
+#reservation-element .btn-modal {
+    background: #C44900;
+    color: #F7F2E9;
+    border: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding : 10px 30px;
+}

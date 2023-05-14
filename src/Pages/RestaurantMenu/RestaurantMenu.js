@@ -5,6 +5,7 @@ import Button from "../../Components/Button/Button";
 import CardCategory from "./Card/CardCategory";
 import { v4 as uuidv4 } from 'uuid';
 import Menu from "./Menu/Menu";
+import Reservation from "../../Components/Reservation/Reservation";
 
 
 const RestaurantMenu = () => {
@@ -55,9 +56,9 @@ const RestaurantMenu = () => {
                         Découvrez l'identité culinaire et la créativité de notre chef Arnaud Michant et son équipe à <br/>
                         travers des plats réalisés à base de produits raffinés, de saison et de producteurs locaux.
                     </p>
-                    <Button
-                        label={"Réserver une table"}
-                    />
+                    <div id="reservation-element">
+                        <Reservation label="Réserver une table" />
+                    </div>
                 </div>
             </div>
 

@@ -1,0 +1,49 @@
+.res1 {
+    margin-top: 50px;
+}
+
+.res1 select, .res1 input {
+    width: 220px;
+    padding: 10px;
+    background: #F1F1F1;
+    border: 1px solid #CCC5B9;
+}
+
+.res1 select {
+    margin-right: 10px;
+}
+
+.res1 input {
+    margin-left: 10px;
+}
+
+
+.res2 {
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.res2 p {
+    margin: 20px 0;
+}
+
+.res-hours {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.res-hours div {
+    width: 60px;
+    background: #C44900;
+    color: #F7F2E9;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.hour-element:hover {
+    background: #8C3400;
+    cursor: pointer;
+}
