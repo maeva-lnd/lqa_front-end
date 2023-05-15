@@ -8,6 +8,21 @@ const Step1 = (props) => {
 
     const [lunch, setLunch] = useState([]);
     const [dinner, setDinner] = useState([]);
+    const today = new Date();
+
+    // Création d'une fonction permettant de transformer une date au format YYYY-MM-DD
+    const formatDate = (date) => {
+        let month = '' + (date.getMonth() + 1);
+        let day = '' + date.getDate();
+        let year = date.getFullYear();
+
+        if (month.length < 2)
+            month = '0' + month;
+        if (day.length < 2)
+            day = '0' + day;
+
+        return year + '-' + month + '-' + day;
+    }
 
     // Création d'une fonction permettant de transformer une date en horaire avec des Regex
     const formateHour = (hour) => {
@@ -16,6 +31,7 @@ const Step1 = (props) => {
         return hour
     }
 
+    // Fonction permettant de changer de Step, en l'occurrence le Step 2 ici
     const changeStep = (event) => {
         props.hourFunc(event.target.id)
         props.stepFunc(2)
@@ -24,6 +40,7 @@ const Step1 = (props) => {
     useEffect(() => {
         const baseURL = "http://127.0.0.1:8000/api/reservation/gethours/" + props.date+ "/" + props.nbGuest
 
+        // Récupération des heures disponibles
         if (props.date !== undefined && props.nbGuest !== undefined) {
             axios.get(baseURL).then((response) => {
                 if(response.data.lunch !== undefined) {
@@ -70,20 +87,11 @@ const Step1 = (props) => {
 
     }, [props.date, props.nbGuest]);
 
-
-    const nbGuestChange = (event) => {
-        {props.nbGuestFunc(event.target.value)}
-    }
-
-    const dateChange = (event) => {
-        {props.dateFunc(event.target.value)}
-    }
-
     return (
         <Fragment>
 
             <div className="res1">
-                <select defaultValue={1} name="nb-guest" onInput={event => nbGuestChange(event)}>
+                <select defaultValue={props.nbGuest} name="nb-guest" onInput={event => props.nbGuestFunc(event.target.value)}>
                     <option value="1">1 couvert</option>
                     <option value="2">2 couverts</option>
                     <option value="3">3 couverts</option>
@@ -93,8 +101,9 @@ const Step1 = (props) => {
                     <option value="7">7 couverts</option>
                 </select>
                 <input
-                    onInput={event => dateChange(event)}
+                    onInput={event => props.dateFunc(event.target.value)}
                     type="date"
+                    min={formatDate(today)}
                 />
             </div>
 

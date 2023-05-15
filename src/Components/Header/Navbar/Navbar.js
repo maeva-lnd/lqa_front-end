@@ -2,8 +2,13 @@ import React from "react";
 import './Navbar.css';
 import {NavLink} from "react-router-dom";
 import Reservation from "../../Reservation/Reservation";
+import {useSelector} from 'react-redux';
 
 const Navbar = () => {
+
+    const firstname = useSelector(state => state.firstname);
+
+
     return (
         <div>
             <nav className="navbar">
@@ -17,7 +22,8 @@ const Navbar = () => {
                     Contact
                 </NavLink>
                 <Reservation label="Réserver"/>
-                <NavLink to="/connexion" >Se connecter</NavLink>
+                {!firstname && <NavLink to="/connexion" >Se connecter</NavLink>}
+                {firstname && <NavLink to="/deconnexion" >Se déconnecter</NavLink>}
             </nav>
         </div>
     )

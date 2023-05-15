@@ -10,7 +10,7 @@ const Contact = () => {
         <div>
             <div className="slider-contact txt-center">
                 <h1 className="p40">Nous contacter</h1>
-                <p>L'équipe du Quai Antique vous accueille dans son ambiance conviviale.</p>
+                <p className="p">L'équipe du Quai Antique vous accueille dans son ambiance conviviale.</p>
                 <div id="reservation-element">
                     <Reservation label="Réserver une table" />
                 </div>

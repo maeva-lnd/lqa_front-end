@@ -9,3 +9,7 @@
     border-bottom: 3px solid #C44900;
     padding-bottom: 20px;
 }
+
+.navbar a:hover {
+    color: #C44900;
+}

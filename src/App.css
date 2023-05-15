@@ -115,3 +115,8 @@ input::placeholder, textarea::placeholder {
     text-transform: uppercase;
     padding : 10px 30px;
 }
+
+#reservation-element .btn-modal:hover {
+    background: #8C3400;
+    cursor: pointer;
+}
