@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Authentification/Login/Login";
 import ForgotPassword from "./Pages/Authentification/ForgotPassword/ForgotPassword";
 import CreateAccount from "./Pages/Authentification/CreateAccount/CreateAccount";
+import Logout from "./Pages/Authentification/Logout/Logout";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/connexion" element={<Login />}/>
             <Route path="/motdepasseperdu" element={<ForgotPassword />}/>
             <Route path="/inscription" element={<CreateAccount />}/>
+            <Route path="/deconnexion" element={<Logout />}/>
         </Routes>
         <Footer />
     </div>

@@ -52,7 +52,7 @@ const RestaurantMenu = () => {
             <div className="slider-card">
                 <div className="container txt-center mb40">
                     <h1 className="p40">Cartes et Menus</h1>
-                    <p className="txt-center">
+                    <p className="txt-center p">
                         Découvrez l'identité culinaire et la créativité de notre chef Arnaud Michant et son équipe à <br/>
                         travers des plats réalisés à base de produits raffinés, de saison et de producteurs locaux.
                     </p>

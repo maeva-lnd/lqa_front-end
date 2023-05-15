@@ -11,3 +11,15 @@
 .btn:hover {
     background: #8C3400;
 }
+
+.btn.btn-white {
+    color: #C44900;
+    background: #FFFFFF;
+    border: 1px solid #C44900;
+}
+
+.btn.btn-white:hover {
+    background: #8C3400;
+    color: #FFFFFF;
+    border: 1px solid #8C3400;
+}

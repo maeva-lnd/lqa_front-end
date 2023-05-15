@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-#slider p {
+#slider .p {
     padding: 40px 0;
     font-size: 20px;
 }

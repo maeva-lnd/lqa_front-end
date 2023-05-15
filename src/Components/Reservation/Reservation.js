@@ -6,27 +6,48 @@ import Step1 from "./Step1/Step1";
 import Step2 from "./Step2/Step2";
 import Step3 from "./Step3/Step3";
 import axios from "axios";
-import {v4 as uuidv4} from "uuid";
+import {useSelector} from 'react-redux';
+
 
 const Reservation = (props) => {
+    // Récupération des infos de session
+    const firstnameSelector = useSelector(state => state.firstname);
+    const lastnameSelector = useSelector(state => state.lastname);
+    const phoneSelector = useSelector(state => state.phone);
+    const emailSelector = useSelector(state => state.email);
+    const messageSelector = useSelector(state => state.allergy);
+    const guestNumberSelector = useSelector(state => state.defaultGuestNumber);
 
-
+    // Création des states du formulaire
     const [modal, setModal] = useState(false);
     const [step, setStep] = useState(1);
-    const [nbGuest, setNbGuest] = useState(1);
+    const [nbGuest, setNbGuest] = useState(guestNumberSelector ? guestNumberSelector : 1);
     const [date, setDate] = useState();
     const [hour, setHour] = useState();
-    const [firstname, setFirstname] = useState('');
-    const [lastname, setLastname] = useState('');
-    const [phone, setPhone] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [firstname, setFirstname] = useState(firstnameSelector ? firstnameSelector : "");
+    const [lastname, setLastname] = useState(lastnameSelector ? lastnameSelector : "");
+    const [phone, setPhone] = useState(phoneSelector ? phoneSelector : "");
+    const [email, setEmail] = useState(emailSelector ? emailSelector : "");
+    const [message, setMessage] = useState(messageSelector ? messageSelector : "");
     const [error, setError] = useState();
+
 
     const baseURL = "http://127.0.0.1:8000/api/reservation";
 
-
     const toggleModal = () => {
+
+        // Réinitialisation des states de la réservation à l'ouverture et fermeture de la pop-up
+        setStep(1);
+        setNbGuest(guestNumberSelector ? guestNumberSelector : 1);
+        setDate();
+        setHour();
+        setFirstname(firstnameSelector ? firstnameSelector : "");
+        setLastname(lastnameSelector ? lastnameSelector : "");
+        setPhone(phoneSelector ? phoneSelector : "");
+        setEmail(emailSelector ? emailSelector : "");
+        setMessage(messageSelector ? messageSelector : "");
+        setError('');
+
         setModal(!modal)
     };
 
@@ -103,7 +124,7 @@ const Reservation = (props) => {
                             }
                             {step === 2 &&
                                 <div className="txt-center">
-                                    <button className="btn-form" onClick={sendReservation}>Réserver</button>
+                                    <button className="btn btn-form" onClick={sendReservation}>Réserver</button>
                                 </div>
                             }
                             {step === 3 &&
