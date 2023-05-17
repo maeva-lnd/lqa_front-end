@@ -8,3 +8,19 @@
 .slider-contact .p {
     padding-bottom: 40px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 768px){
+    .slider-contact .p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

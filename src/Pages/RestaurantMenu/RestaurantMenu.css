@@ -55,3 +55,84 @@
     border-bottom: 1px solid  #CCC5B9;
     padding: 20px 0;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .slider-card .p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-items {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    .category {
+        padding: 25px 0 10px 0;
+    }
+
+    .card-restaurant .separator {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .menu-category, .menu-dish {
+        width: 100%;
+    }
+
+    .menu-category h3 {
+        color: #C44900;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .slider-card {
+        min-height: 320px;
+    }
+
+    .slider-card .p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-items {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 90%;
+    }
+
+    .category {
+        padding: 25px 0 10px 0;
+    }
+
+    .card-restaurant .separator {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .menu-category, .menu-dish {
+        width: 100%;
+    }
+
+    .menu-category h3 {
+        color: #C44900;
+    }
+}

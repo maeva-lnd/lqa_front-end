@@ -10,7 +10,7 @@ const ContactBanner = () => {
     return (
         <div>
             <section className="bg-beige">
-                <div className="container infos-banner p20">
+                <div className="container infos-banner">
 
                     <Item
                         title="Adresse"

@@ -39,3 +39,40 @@
 .gallery .btn {
     text-align: center;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .gallery {
+        width: 100%;
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    .gallery .content-img img {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .gallery .content-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .gallery {
+        width: 100%;
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    .gallery .content-img img {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .gallery .content-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}

@@ -15,13 +15,15 @@ const Contact = () => {
                     <Reservation label="Réserver une table" />
                 </div>
             </div>
-            <h2 className="txt-center p40">Demandes Spéciales</h2>
-            <p className="txt-center">
-                Une demande/envie particulière ? Besoin d'un devis personnalisé ? <br/><br/>
-                Intéressé par une privatisation pour un évènement ? <br/><br/>
-                Contactez-nous par téléphone ou par mail. <br/><br/>
-                Vous pouvez également nous envoyer un message via le formulaire ci-dessous :
-            </p>
+            <div className="info-text">
+                <h2 className="txt-center p40">Demandes Spéciales</h2>
+                <p className="txt-center">
+                    Une demande/envie particulière ? Besoin d'un devis personnalisé ? <br/><br/>
+                    Intéressé par une privatisation pour un évènement ? <br/><br/>
+                    Contactez-nous par téléphone ou par mail. <br/><br/>
+                    Vous pouvez également nous envoyer un message via le formulaire ci-dessous :
+                </p>
+            </div>
             <ContactForm />
             <ContactBanner />
         </div>

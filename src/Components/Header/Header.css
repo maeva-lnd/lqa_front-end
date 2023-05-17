@@ -8,3 +8,28 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    header img#light-logo {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header img#light-logo {
+        width: 170px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
