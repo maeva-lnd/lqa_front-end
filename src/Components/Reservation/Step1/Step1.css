@@ -5,7 +5,6 @@
 .res1 select, .res1 input {
     width: 220px;
     padding: 10px;
-    background: #F1F1F1;
     border: 1px solid #CCC5B9;
 }
 
@@ -46,4 +45,25 @@
 .hour-element:hover {
     background: #8C3400;
     cursor: pointer;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .res1 select {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .res1 select {
+        margin: 10px 0;
+        background: none;
+    }
+
+    .res1 input {
+        margin-left: 0;
+    }
+
+    .res1 select, .res1 input {
+        width: 270px;
+    }
 }

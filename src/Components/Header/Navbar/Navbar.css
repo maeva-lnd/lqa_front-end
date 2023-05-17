@@ -13,3 +13,88 @@
 .navbar a:hover {
     color: #C44900;
 }
+
+.toggle {
+    display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .navbar {
+        margin-top: 90px;
+        background: #FFFFFF;
+        width: 100%;
+        transition: height 1s ease-in-out;
+    }
+
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    .nav-active {
+        border-bottom: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle img {
+        width: 30px;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+    }
+
+    .toggle .close-icon {
+        width: 22px;
+    }
+
+    .navbar .btn-modal {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar {
+        margin-top: 90px;
+        background: #FFFFFF;
+        width: 100%;
+        transition: height 1s ease-in-out;
+    }
+
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    .nav-active {
+        border-bottom: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle img {
+        width: 30px;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+    }
+
+    .toggle .close-icon {
+        width: 22px;
+    }
+
+    .navbar .btn-modal {
+        width: 100%;
+    }
+}

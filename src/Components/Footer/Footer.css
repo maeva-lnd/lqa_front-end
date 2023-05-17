@@ -47,3 +47,42 @@ footer .btn-modal {
     color:  #403D39;
     text-transform: none;
 }
+
+footer .btn-modal:hover {
+    background: none;
+    color:  #403D39;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    footer #logo {
+        padding-bottom: 20px;
+    }
+
+    #footer-infos {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    footer #copyright p {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer img#dark-logo {
+        width: 170px;
+    }
+
+    footer #logo {
+        padding-bottom: 20px;
+    }
+
+    #footer-infos {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    footer #copyright p {
+        border-top: none;
+    }
+}

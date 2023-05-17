@@ -120,3 +120,16 @@ input::placeholder, textarea::placeholder {
     background: #8C3400;
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .pb50 {
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .pb50 {
+        padding-bottom: 25px;
+    }
+}

@@ -29,3 +29,34 @@ label {
     margin-top: 10px;
     font-size: 16px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .container-contact {
+        width: 700px;
+    }
+
+    .form-group input, textarea {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-contact {
+        width: 300px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .form-group input{
+        width: 300px;
+        margin: 5px 0;
+    }
+
+    .form-group textarea {
+        width: 300px;
+        margin: 5px 0;
+    }
+}

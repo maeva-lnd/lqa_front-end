@@ -8,7 +8,7 @@
 }
 
 
-.edit-icon {
+.res-overview .edit-icon {
     width: 25px;
 }
 
@@ -30,4 +30,35 @@
 .res-form textarea {
     height: 80px;
     width: 460px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 768px){
+    .res-overview {
+        margin: 25px 0;
+        flex-direction: column;
+    }
+
+    .res-overview .edit-icon {
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    .res-form {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .res-form input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .res-form textarea {
+        width: 100%;
+        margin: 5px 0;
+    }
 }

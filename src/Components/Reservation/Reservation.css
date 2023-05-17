@@ -54,3 +54,50 @@
     padding: 10px 0;
     color: #C44900;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .btn-modal {
+        background: none;
+        color: #212121;
+        padding: 25px 0;
+    }
+
+    .btn-modal:hover {
+        background: none;
+        color: #C44900;
+    }
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .modal {
+        width: 320px;
+        max-height: 75%;
+        transform: translate(-50%,-40%);
+        overflow: scroll;
+    }
+
+    .btn-modal {
+        background: none;
+        color: #212121;
+        padding: 25px 0;
+    }
+
+    .btn-modal:hover {
+        background: none;
+        color: #C44900;
+    }
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

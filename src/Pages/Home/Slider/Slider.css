@@ -13,3 +13,10 @@
     padding: 40px 0;
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 768px){
+    #slider {
+        min-height: 450px;
+    }
+}
