@@ -7,7 +7,6 @@ const SiteMap = () => {
         <div id="sitemap">
             <h4>Plan du site</h4>
             <Link to="/">Accueil</Link>
-            <Link to="/lerestaurant">Le restaurant</Link>
             <Link to="/lacarte">La carte</Link>
             <Link to="/contact">Contact</Link>
             <Reservation label="Réserver"/>
