@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './CreateAccount.css';
 import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
@@ -43,13 +43,11 @@ const CreateAccount = () => {
                 .then((response) => {
                     nav("/connexion");
                 }   ).catch((error) => {
-                setError('Une erreur est apparue !')
+                setError('Une erreur technique a été détectée, veuillez réessayer ultérieurement')
             });
         } else {
             setError("Une erreur a été détectée, veuillez vérifier la validité de votre formulaire")
         }
-
-
     }
 
     const checkForm = () => {
@@ -141,7 +139,6 @@ const CreateAccount = () => {
             <div className="btn-group">
                 <button className="btn" onClick={createAccount}>Créer mon compte</button>
             </div>
-
 
         </div>
     )
