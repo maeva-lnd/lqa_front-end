@@ -52,20 +52,46 @@ const Reservation = (props) => {
     };
 
     const sendReservation = () => {
-        axios.post(baseURL, {
-            "arrival": date + " " + hour,
-            "guestNumber": nbGuest,
-            "firstname": firstname,
-            "lastname": lastname,
-            "phone": phone,
-            "email": email,
-            "allergy": message
-        }).then((response) => {
-            setStep(3)
-        }).catch(function (error) {
-            setError("Une erreur a été détectée, veuillez vérifier la validité de votre formulaire")
-        });
+        if (checkForm()) {
+            axios.post(baseURL, {
+                "arrival": date + " " + hour,
+                "guestNumber": nbGuest,
+                "firstname": firstname,
+                "lastname": lastname,
+                "phone": phone,
+                "email": email,
+                "allergy": message
+            }).then((response) => {
+                setStep(3)
+            }).catch(function (error) {
+                setError("Une erreur technique a été détectée, veuillez réessayer ultérieurement")
+            });
+        } else {
+            setError('Une erreur a été détectée, veuillez vérifier la validité de votre formulaire')
+        }
     };
+
+    const checkForm = () => {
+        if (
+            firstname !== ""
+            && firstname !== undefined
+            && lastname !== ""
+            && lastname !== undefined
+            && phone !== ""
+            && phone !== undefined
+            && /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/.test(phone)
+            && email !== ""
+            && email !== undefined
+            && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            && nbGuest >= 1
+        ) {
+
+            return true
+
+        } else {
+            return false
+        }
+    }
 
     return (
         <Fragment>

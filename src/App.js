@@ -9,6 +9,7 @@ import Login from "./Pages/Authentification/Login/Login";
 import ForgotPassword from "./Pages/Authentification/ForgotPassword/ForgotPassword";
 import CreateAccount from "./Pages/Authentification/CreateAccount/CreateAccount";
 import Logout from "./Pages/Authentification/Logout/Logout";
+import Page404 from "./Pages/404/Page404";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="/*" element={<Page404 />}/>
             <Route path="/lacarte" element={<RestaurantMenu />}/>
             <Route path="/contact" element={<Contact />}/>
             <Route path="/connexion" element={<Login />}/>

@@ -48,6 +48,7 @@ const Navbar = () => {
                     </NavLink>
                     <Reservation label="Réserver"/>
                     {!firstname && <NavLink onClick={toggleNavbar} to="/connexion" >Se connecter</NavLink>}
+                    {firstname && <NavLink to="http://localhost:8000/admin" target="_blank">Admin</NavLink>}
                     {firstname && <NavLink onClick={toggleNavbar} to="/deconnexion" >Se déconnecter</NavLink>}
                 </nav>
             )}

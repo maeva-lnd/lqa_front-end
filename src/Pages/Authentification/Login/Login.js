@@ -11,6 +11,7 @@ const Login = () => {
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const [error, setError] = useState();
 
     const dispatch = useDispatch();
 
@@ -44,6 +45,7 @@ const Login = () => {
                 config
             ).then((response) => {
 
+
                 // Création des variables de sessions
                 window.sessionStorage.setItem("token", token);
                 window.sessionStorage.setItem("firstname", response.data.firstname);
@@ -69,6 +71,8 @@ const Login = () => {
                 // Après connexion, redirection vers la page d'accueil
                 nav("/");
             });
+        }).catch(function (error) {
+            setError("Veuillez vérifier vos identifiants de connexion, une erreur a été détectée !")
         });
     }
 
@@ -76,6 +80,7 @@ const Login = () => {
     return (
         <div className="authentification-container">
             <h1 className="p40">Connexion</h1>
+            {error && (<p className="error-msg">{error}</p>)}
             <input
                 id="email"
                 type="email"
@@ -92,7 +97,6 @@ const Login = () => {
                 onInput={event => {setPassword(event.target.value)}}
                 required
             />
-            <Link to="/motdepasseperdu" className="txt-lighter link">Mot de passe oublié ?</Link>
             <div className="btn-group">
                 <button className="btn" type="submit" onClick={sendConnexion}>Se connecter</button>
                 <Button
