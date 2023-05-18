@@ -39,6 +39,11 @@ p, a, button {
     color:  #403D39;
 }
 
+.error-msg {
+    padding: 10px 0;
+    color: #C44900;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;

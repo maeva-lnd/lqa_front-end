@@ -50,11 +50,6 @@
     padding: 10px;
 }
 
-.error-msg {
-    padding: 10px 0;
-    color: #C44900;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1199px) {
     .btn-modal {
         background: none;

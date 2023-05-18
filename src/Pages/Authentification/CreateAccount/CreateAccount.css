@@ -6,11 +6,7 @@
 
 .form-msg-privacy {
     font-size: 14px;
-    padding: 20px 0;
-}
-
-.ca-btn {
-    margin-bottom: 30px;
+    padding: 20px 0 0 0;
 }
 
 @media screen and (max-width: 768px){

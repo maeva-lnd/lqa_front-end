@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import './RestaurantMenu.css';
-import Button from "../../Components/Button/Button";
 import CardCategory from "./Card/CardCategory";
 import { v4 as uuidv4 } from 'uuid';
 import Menu from "./Menu/Menu";
