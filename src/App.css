@@ -44,6 +44,11 @@ p, a, button {
     color: #C44900;
 }
 
+.success-msg {
+    padding: 10px 0;
+    color: darkgreen;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;

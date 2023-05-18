@@ -1,6 +1,5 @@
 import React from "react";
 import './Contact.css';
-import Button from "../../Components/Button/Button";
 import ContactForm from "./ContactForm/ContactForm";
 import ContactBanner from "./ContactBanner/ContactBanner";
 import Reservation from "../../Components/Reservation/Reservation";
