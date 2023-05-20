@@ -9,7 +9,7 @@ const OpeningHours = () => {
     const [openingHours, setOpeningHours] = useState();
 
     useEffect(() => {
-        const baseURL = "http://127.0.0.1:8000/api/openinghours"
+        const baseURL = process.env.REACT_APP_API_BASE_URL + "api/openinghours";
 
          axios.get(baseURL).then((response) => {
              setOpeningHours(
