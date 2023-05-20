@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './Login.css';
-import {Link} from "react-router-dom";
 import Button from "../../../Components/Button/Button";
 import {useDispatch} from "react-redux";
 import axios from "axios";
@@ -18,8 +17,8 @@ const Login = () => {
     const nav = useNavigate();
 
     const sendConnexion = () => {
-        const getUserURL = "http://127.0.0.1:8000/api/user"
-        const getTokenURL = "http://127.0.0.1:8000/api/login_check"
+        const getUserURL = process.env.REACT_APP_API_BASE_URL + "api/user";
+        const getTokenURL = process.env.REACT_APP_API_BASE_URL + "api/login_check";
 
         // Récupération du token
         axios.post(

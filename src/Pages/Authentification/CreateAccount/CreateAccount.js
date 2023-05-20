@@ -21,7 +21,7 @@ const CreateAccount = () => {
     const createAccount = () => {
 
         if (checkForm()) {
-            const baseURL = "http://127.0.0.1:8000/api/user";
+            const baseURL = process.env.REACT_APP_API_BASE_URL + "api/user";
 
             const config = {
                 headers: {

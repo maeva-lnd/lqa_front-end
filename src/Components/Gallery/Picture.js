@@ -2,7 +2,8 @@ import React from "react";
 
 const Picture = (props) => {
 
-    const baseGalleryUrl = "http://127.0.0.1:8000/upload/images/gallery/"
+    const baseGalleryUrl = process.env.REACT_APP_API_BASE_URL + "upload/images/gallery/";
+
 
     return (
         <div className="content-img">

@@ -38,7 +38,7 @@ const Step1 = (props) => {
     }
 
     useEffect(() => {
-        const baseURL = "http://127.0.0.1:8000/api/reservation/gethours/" + props.date+ "/" + props.nbGuest
+        const baseURL = process.env.REACT_APP_API_BASE_URL + "api/reservation/gethours/" + props.date+ "/" + props.nbGuest;
 
         // Récupération des heures disponibles
         if (props.date !== undefined && props.nbGuest !== undefined) {

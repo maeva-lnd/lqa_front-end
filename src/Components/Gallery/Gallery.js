@@ -10,7 +10,7 @@ const Gallery = () => {
     const [gallery, setGallery] = useState();
 
     useEffect(() => {
-        const baseURL = "http://127.0.0.1:8000/api/gallery"
+        const baseURL = process.env.REACT_APP_API_BASE_URL + "api/gallery";
 
         axios.get(baseURL).then((response) => {
             setGallery(

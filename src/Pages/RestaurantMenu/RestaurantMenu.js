@@ -13,8 +13,8 @@ const RestaurantMenu = () => {
     const [menu, setMenu] = useState();
 
     useEffect(() => {
-        const baseURLCard = "http://127.0.0.1:8000/api/card";
-        const baseURLMenu = "http://127.0.0.1:8000/api/menu";
+        const baseURLCard = process.env.REACT_APP_API_BASE_URL + "api/card";
+        const baseURLMenu = process.env.REACT_APP_API_BASE_URL + "api/menu";
 
         axios.get(baseURLCard).then((response) => {
             setCard(
