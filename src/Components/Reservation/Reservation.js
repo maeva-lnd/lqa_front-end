@@ -55,7 +55,7 @@ const Reservation = (props) => {
         if (checkForm()) {
             axios.post(baseURL, {
                 "arrival": date + " " + hour,
-                "guestNumber": nbGuest,
+                "guestNumber": typeof nbGuest === "string" ? parseInt(nbGuest) : nbGuest,
                 "firstname": firstname,
                 "lastname": lastname,
                 "phone": phone,

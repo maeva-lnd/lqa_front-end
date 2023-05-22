@@ -6,8 +6,8 @@ const OpeningHoursRow = (props) => {
 
     // Création d'une fonction permettant de transformer une date en horaire
     const formateHour = (hour) => {
-        hour = hour.replace("1970-01-01T", "")
-        hour = hour.replace(":00+01:00", "")
+        hour = hour.replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}T/, "")
+        hour = hour.replace(/:[0-9]{2}\+[0-9]{2}:[0-9]{2}/, "")
         return hour
     }
 

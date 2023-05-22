@@ -13,6 +13,7 @@ const Navbar = () => {
     const baseURL = process.env.REACT_APP_API_BASE_URL + "admin";
 
     const firstname = useSelector(state => state.firstname);
+    const roles = useSelector(state => state.roles);
 
     const [toggleMenu, setToggleMenu] = useState(false);
     const [largeur, setLargeur] = useState(window.innerWidth);
@@ -50,7 +51,7 @@ const Navbar = () => {
                     </NavLink>
                     <Reservation label="Réserver"/>
                     {!firstname && <NavLink onClick={toggleNavbar} to="/connexion" >Se connecter</NavLink>}
-                    {firstname && <NavLink to={baseURL} target="_blank">Admin</NavLink>}
+                    {roles.includes("ROLE_ADMIN")  && <NavLink to={baseURL} target="_blank">Admin</NavLink>}
                     {firstname && <NavLink onClick={toggleNavbar} to="/deconnexion" >Se déconnecter</NavLink>}
                 </nav>
             )}
