@@ -1,6 +1,5 @@
 import React from "react";
 import './Slider.css';
-import Button from "../../../Components/Button/Button";
 import Reservation from "../../../Components/Reservation/Reservation";
 
 
