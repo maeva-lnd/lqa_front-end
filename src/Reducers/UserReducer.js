@@ -20,7 +20,8 @@ function UserReducer(state = INITIAL_STATE, action){
                 email: action.payload.email,
                 phone: action.payload.phone,
                 defaultGuestNumber: action.payload.defaultGuestNumber,
-                allergy: action.payload.allergy
+                allergy: action.payload.allergy,
+                roles: action.payload.roles
             }
         }
         case 'REMOVE_USER': {
@@ -32,7 +33,8 @@ function UserReducer(state = INITIAL_STATE, action){
                 email: "",
                 phone: "",
                 defaultGuestNumber: "",
-                allergy: ""
+                allergy: "",
+                roles: ""
             }
         }
     }

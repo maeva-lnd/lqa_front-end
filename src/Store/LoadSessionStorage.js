@@ -15,6 +15,7 @@ const LoadSessionStorage = () => {
             email: window.sessionStorage.getItem('email'),
             defaultGuestNumber: window.sessionStorage.getItem('defaultGuestNumber'),
             allergy: window.sessionStorage.getItem('allergy'),
+            roles: window.sessionStorage.getItem('roles') ? window.sessionStorage.getItem('roles') : []
         }
     })
 }

@@ -53,6 +53,7 @@ const Login = () => {
                 window.sessionStorage.setItem("phone", response.data.phone);
                 window.sessionStorage.setItem("defaultGuestNumber", response.data.defaultGuestNumber);
                 window.sessionStorage.setItem("allergy", response.data.allergy);
+                window.sessionStorage.setItem("roles", response.data.roles);
 
                 dispatch ({
                     type: "SET_USER",
@@ -64,6 +65,7 @@ const Login = () => {
                         phone: response.data.phone,
                         defaultGuestNumber: response.data.defaultGuestNumber,
                         allergy: response.data.allergy,
+                        roles: response.data.roles
                     }
                 })
 
