@@ -10,10 +10,6 @@
     padding: 10px 0;
 }
 
-label {
-    display: block;
-}
-
 .form-group input {
     width: 400px;
     height: 40px;
