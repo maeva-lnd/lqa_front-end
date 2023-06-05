@@ -4,7 +4,7 @@ Dans le cadre d’une évaluation pour l’obtention du titre Développeur web e
 
 Ce dépot concerne la partie réalisée en REACT JS.
 
-Pour en savoir plus sur la partie API, vous pouvez allez sur le dépôt suivant : [https://github.com/maeva-lnd/lqa_back-end](https://github.com/maeva-lnd/lqa_back-end)
+Pour en savoir plus sur la partie API, vous pouvez aller sur le dépôt suivant : [https://github.com/maeva-lnd/lqa_back-end](https://github.com/maeva-lnd/lqa_back-end)
 
 Les annexes de ce projet se trouvent ici :  [https://github.com/maeva-lnd/lqa_annexes](https://github.com/maeva-lnd/lqa_annexes)
 
